@@ -51,6 +51,7 @@ This is a Quiz Application built using React for the front-end and Django for th
     ```bash
     pip install -r requirements.txt
     ```
+  
 
 4. Apply database migrations:
     ```bash
@@ -73,7 +74,7 @@ The backend will be available at `http://127.0.0.1:8000/`.
 
 1. Navigate to the `frontend` directory:
     ```bash
-    cd frontend
+    cd quiz-app
     ```
 
 2. Install the necessary packages:
