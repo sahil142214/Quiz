@@ -1,0 +1,78 @@
+/* Quizzes.css */
+
+/* Container for the entire quizzes page */
+.quizzes-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Heading */
+.quizzes-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Loading and error messages */
+.quizzes-container p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Error message styling */
+.quizzes-container .error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Quiz list container */
+.quiz-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Quiz card styling */
+.quiz-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Hover effect for quiz cards */
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Quiz title styling */
+.quiz-card h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Quiz description styling */
+.quiz-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Quiz questions count styling */
+.quiz-card p:last-child {
+  font-weight: bold;
+  color: #4caf50;
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import api from "../utils/axios";  // Import the custom Axios instance
+import api from "../../utils/axios";  // Import the custom Axios instance
+import './QuizArchive.css'; // Import the CSS for styling
 
 const QuizArchive = () => {
   const [attempts, setAttempts] = useState([]);
@@ -35,14 +36,14 @@ const QuizArchive = () => {
   };
 
   return (
-    <div>
+    <div className="quiz-archive">
       <h2>Quiz Archive</h2>
 
       {/* Show loading state */}
-      {isLoading && <p>Loading quiz archive...</p>}
+      {isLoading && <div className="loading-spinner">Loading...</div>}
 
       {/* Show error message */}
-      {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
 
       {/* Show attempts if available */}
       {attempts.length > 0 ? (

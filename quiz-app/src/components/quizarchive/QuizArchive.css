@@ -1,0 +1,73 @@
+/* QuizArchive.css */
+
+/* Main container for the quiz archive */
+.quiz-archive {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Heading for the quiz archive */
+.quiz-archive h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Quiz archive list */
+.quiz-archive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Quiz archive card styling */
+.quiz-archive-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.quiz-archive-card:hover {
+  transform: scale(1.03);
+}
+
+/* Quiz title */
+.quiz-archive-card h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Quiz score and attempt time */
+.quiz-archive-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* If no quizzes are available */
+.quiz-archive p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}

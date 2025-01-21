@@ -1,0 +1,73 @@
+/* QuizScreen.css */
+
+/* Main container */
+.quiz-screen {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Heading for the quiz */
+.quiz-screen h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Question container */
+.question {
+  margin-bottom: 20px;
+}
+
+/* Question text */
+.question-text {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Options styling */
+.option {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #45a049;
+}

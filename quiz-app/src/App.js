@@ -1,22 +1,13 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import QuizScreen from "./components/QuizScreen";
-import QuizArchive from "./components/QuizArchive";
-import Quizzes from "./components/Quizzes";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register";
+import QuizScreen from "./components/quizscreen/QuizScreen";
+import QuizArchive from "./components/quizarchive/QuizArchive";
+import Quizzes from "./components/quizzes/Quizzes";
+import Profile from "./components/Profile/Profile";  // Import the Profile component
 
 const AppRoutes = () => {
-  const navigate = useNavigate();
-
-  // // Check if user is logged in and redirect accordingly
-  // useEffect(() => {
-  //   const accessToken = localStorage.getItem("access_token");
-  //   if (accessToken) {
-  //     navigate("/quizzes");
-  //   }
-  // }, [navigate]);
-
   // Protected route component
   const ProtectedRoute = ({ children }) => {
     const accessToken = localStorage.getItem("access_token");
@@ -47,6 +38,14 @@ const AppRoutes = () => {
         }
       />
       <Route path="/quiz/:quizId" element={<QuizScreen />} />
+      <Route
+        path="/profile"
+        element={
+          <ProtectedRoute>
+            <Profile />
+          </ProtectedRoute>
+        }
+      />
       <Route path="/" element={<Login />} /> {/* Default route */}
     </Routes>
   );
